@@ -8,17 +8,16 @@
              x:Class="PersonalityQuiz.MainPage">
 
     <StackLayout>
-        
-        <Label Text="{Binding Text}"
+
+        <Label
            FontSize="Large"
            x:Name="label"
            HorizontalOptions="Center"
            VerticalOptions="Center">
-            <Label.BindingContext>
-                <local:Question />
-            </Label.BindingContext>
         </Label>
 
+        <Button Text="False" Clicked="OnFalse" />
+        <Button Text="True" Clicked="OnTrue" />
     </StackLayout>
 
 </ContentPage>

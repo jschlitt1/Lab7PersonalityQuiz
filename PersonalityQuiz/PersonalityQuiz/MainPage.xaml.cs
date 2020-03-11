@@ -17,22 +17,36 @@ namespace PersonalityQuiz
         public MainPage()
         {
             InitializeComponent();
+            label.Text = Question.All[0].Text;
         }
         public void nextQuestion()
         {
             QuestionNum++;
-            label.Text = Question.All[QuestionNum].Text;
+            if(QuestionNum < Question.All.Count())
+            {
+                label.Text = Question.All[QuestionNum].Text;
+            }
+            else
+            {
+                showResult();
+            }
+            
         }
-        public void OnTrue()
+        public void OnTrue(Object sender, EventArgs arg)
         {
-            //Question.OnTrue();
-            //nextQuestion();
+            Question.All[QuestionNum].OnTrue();
+            nextQuestion();
         }
 
-        public void OnFalse()
+        public void OnFalse(Object sender, EventArgs arg)
         {
-            //Question.OnFalse();
-            //nextQuestion();
+            Question.All[QuestionNum].OnFalse();
+            nextQuestion();
+        }
+
+        public void showResult()
+        {
+            label.Text = "Your Character is: " + Character.HighestScore();
         }
     }
 }

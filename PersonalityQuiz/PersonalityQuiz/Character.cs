@@ -27,6 +27,21 @@ namespace PersonalityQuiz
             Score--;
         }
 
+        public static string HighestScore()
+        {
+            int HighScore = -100;
+            Character HighestChar = new Character(-100, "Default", "There was an error executing the code");
+            foreach (Character character in Character.All)
+            {
+                if(character.Score > HighScore)
+                {
+                    HighestChar = character;
+                    HighScore = character.Score;
+                }                
+            }
+            
+            return HighestChar.Name;
+        }
         static Character()
         {
             All = new List<Character>

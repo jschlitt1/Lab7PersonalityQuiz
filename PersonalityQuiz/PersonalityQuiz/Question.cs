@@ -34,8 +34,10 @@ namespace PersonalityQuiz
             All = new List<Question>
             {
                 new Question("I like to spend time with people!", Character.All[2]), //pathfinder
+                new Question("I like to keep moving!", Character.All[2]), //pathfinder
                 new Question("I do not like to be on Social Media", Character.All[1]), //crypto
-                new Question("I like to stay focused and on topic", Character.All[3]) //revenent
+                new Question("I like to stay focused and on topic", Character.All[3]), //revenent
+                new Question("I like to take care of people", Character.All[0]) //lifeline
             };
         }
         public static IList<Question> All { private set; get; }
