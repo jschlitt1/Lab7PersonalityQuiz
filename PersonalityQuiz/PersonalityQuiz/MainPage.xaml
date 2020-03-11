@@ -13,11 +13,16 @@
            FontSize="Large"
            x:Name="label"
            HorizontalOptions="Center"
-           VerticalOptions="Center">
+           VerticalOptions="CenterAndExpand">
+            <Label.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped" />
+                <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped" />
+            </Label.GestureRecognizers>
         </Label>
 
-        <Button Text="False" Clicked="OnFalse" />
-        <Button Text="True" Clicked="OnTrue" />
+        <Button Text="False" Clicked="OnFalseClicked" x:Name="FalseButton"/>
+        <Button Text="True" Clicked="OnTrueClicked" x:Name="TrueButton"/>
+        
     </StackLayout>
 
 </ContentPage>
