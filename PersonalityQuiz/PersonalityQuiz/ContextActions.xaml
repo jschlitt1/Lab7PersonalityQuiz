@@ -11,9 +11,9 @@
                     </ViewCell.ContextActions>
                     <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
                         <StackLayout Padding="5,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
-                            <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Medium" />
-                            <Button Text="True" CommandParameter="{Binding .}" HorizontalOptions="Center" Clicked="OnTrue"/>
-                            <Button Text="False" CommandParameter="{Binding .}" HorizontalOptions="Center" Clicked="OnFalse" />
+                            <Label Text="{Binding Text}" VerticalTextAlignment="Center" FontSize="Medium" />
+                            <Button Text="True" CommandParameter="{Binding OnTrue}" HorizontalOptions="Center"/>
+                            <Button Text="False" CommandParameter="{Binding OnFalse}" HorizontalOptions="Center"/>
                         </StackLayout>
                     </StackLayout>
                 </ViewCell>
