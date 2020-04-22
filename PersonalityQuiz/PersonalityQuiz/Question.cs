@@ -10,7 +10,6 @@ namespace PersonalityQuiz
         public Question(string text, Character whoChange)
         {
             Text = text;
-
             WhoChange = whoChange;
         }
         public Question()

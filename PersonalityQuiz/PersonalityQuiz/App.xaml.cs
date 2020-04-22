@@ -10,7 +10,7 @@ namespace PersonalityQuiz
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new ContextActionsXaml());
         }
 
         protected override void OnStart()
