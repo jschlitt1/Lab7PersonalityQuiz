@@ -35,12 +35,17 @@ namespace PersonalityQuiz
         }
         public void OnTrue(object sender, EventArgs e)
         {
-            DisplayAlert("Alert","True was clicked", "OK");
+            var mi = ((Button)sender);
+            ((Question)mi.BindingContext).OnTrue();
         }
         public void OnFalse(object sender, EventArgs e)
         {
-            var mi = ((MenuItem)sender);
-            DisplayAlert("Alert","False was clicked", "OK");
+            var mi = ((Button)sender);
+            ((Question)mi.BindingContext).OnFalse();
+        }
+        public void OnCalculate(object sender, EventArgs e)
+        {
+            DisplayAlert("Results", "Your Character is: " + Character.HighestScore(), "OK");
         }
 
         //public void OnDelete(object sender, EventArgs e)

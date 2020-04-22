@@ -5,15 +5,18 @@
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.ContextActions>
-                           <!-- This is for if you held an item and the menu showed up, not needed for the current project-->
+                        <!-- This is for if you held an item and the menu showed up-->
                         <!--<MenuItem Clicked="OnMore" CommandParameter="{Binding .}" Text="More" /> -->
-                       <!-- <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" /> -->
+                        <!-- <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" /> -->
+                        <MenuItem Clicked="OnCalculate" Text="Calculate"/>
                     </ViewCell.ContextActions>
                     <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
                         <StackLayout Padding="5,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
-                            <Label Text="{Binding Text}" VerticalTextAlignment="Center" FontSize="Medium" />
-                            <Button Text="True" CommandParameter="{Binding OnTrue}" HorizontalOptions="Center"/>
-                            <Button Text="False" CommandParameter="{Binding OnFalse}" HorizontalOptions="Center"/>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Text}" FontSize="Medium"/>
+                                <Button Text="True" CommandParameter="{Binding .}" Clicked="OnTrue"/>
+                                <Button Text="False" CommandParameter="{Binding .}" Clicked="OnFalse"/>
+                            </StackLayout>
                         </StackLayout>
                     </StackLayout>
                 </ViewCell>
