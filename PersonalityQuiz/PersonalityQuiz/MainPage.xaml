@@ -20,6 +20,8 @@
             </Label.GestureRecognizers>
         </Label>
 
+        <Label x:Name="Description" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" IsVisible="True"></Label>
+
         <Button Text="False" Clicked="OnFalseClicked" x:Name="FalseButton"/>
         <Button Text="True" Clicked="OnTrueClicked" x:Name="TrueButton"/>
         

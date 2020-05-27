@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace PersonalityQuiz
 {
@@ -53,10 +54,30 @@ namespace PersonalityQuiz
             OnFalse();
         }
 
-        public void showResult()
+        async public void showResult()
         {
+            Legend chosenLegend = new Legend();
             hidebuttons();
+            label.Text = "Contacting API, please wait...";
+            //try {
+                List<Legend> legends= await App.LegendListManager.GetTasksAsync();
+                foreach(Legend legend in legends)
+                {
+                //Test.Text = Test.Text + ", " + legend.name;
+                if (((legend.name).ToLower()).Equals((Character.HighestScore()).ToLower()))
+                    {
+                        chosenLegend = legend;
+                    }
+                }
+
+            //}
+            //catch (Exception ex){
+               // Debug.WriteLine(@"\tERROR {0}", ex.Message);
+             //  label.Text = "Your Character is: " + Character.HighestScore() + "/n Error: There was an Error Contacting the API, Please try again later ";
+           // }
             label.Text = "Your Character is: " + Character.HighestScore();
+            Description.Text = "Description: " + chosenLegend.description;
+            
         }
 
         public void OnSwiped(object sender, SwipedEventArgs args)

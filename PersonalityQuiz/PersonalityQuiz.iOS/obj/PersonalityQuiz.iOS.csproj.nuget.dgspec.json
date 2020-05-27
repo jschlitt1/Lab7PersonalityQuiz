@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj": {}
+    "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj": {
+    "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj",
         "projectName": "PersonalityQuiz.iOS",
-        "projectPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj",
+        "projectPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\PersonalityQuiz.iOS.csproj",
         "packagesPath": "C:\\Users\\charg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\obj\\",
+        "outputPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj": {
-                "projectPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj"
+              "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj": {
+                "projectPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj"
               }
             }
           }
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj": {
+    "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj",
+        "projectUniqueName": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj",
         "projectName": "PersonalityQuiz",
-        "projectPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj",
+        "projectPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz.csproj",
         "packagesPath": "C:\\Users\\charg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab7PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\obj\\",
+        "outputPath": "C:\\Users\\charg\\source\\repos\\PersonalityQuiz\\Lab10PersonalityQuiz\\PersonalityQuiz\\PersonalityQuiz\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -109,6 +109,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
